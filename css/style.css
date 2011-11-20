@@ -1,0 +1,166 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+	list-style:none;
+}
+
+:focus
+{
+	outline:0;
+}
+
+a:active
+{
+	outline:none;
+}
+
+a,a:link
+{
+	text-decoration:none;
+	color:#434343;
+}
+
+a:hover,a:active
+{
+	color:#599100;
+	text-decoration:none;
+}
+
+body
+{
+	line-height:1;
+	color:#000;
+	background:#FFF;
+}
+
+ol,ul
+{
+	list-style:none;
+}
+
+table
+{
+	border-collapse:separate;
+	border-spacing:0;
+}
+
+caption,th,td
+{
+	text-align:left;
+	font-weight:400;
+}
+
+blockquote:before,blockquote:after,q:before,q:after
+{
+	content:"";
+}
+
+blockquote,q
+{
+	quotes:;
+}
+
+@font-face
+{
+	font-family:MonacoRegular;
+	src:url(monaco-webfont.eot);
+	src:url(monaco-webfont.eot?#iefix) format(embedded-opentype), url(monaco-webfont.woff) format(woff), url(monaco-webfont.ttf) format(truetype), url(monaco-webfont.svg#MonacoRegular) format(svg);
+	font-weight:400;
+	font-style:normal;
+}
+
+body
+{
+	font:normal 10px/1.5 MonacoRegular,"Microsoft Yahei",Tahoma, Helvetica, Arial, SimSun, sans-serif;
+	letter-spacing:0;
+	color:#434343;
+	background:#efefef url(../img/background.png) repeat top center;
+	padding:20px 0;
+	position:relative;
+	-webkit-font-smoothing:subpixel-antialiased;
+	text-shadow:#555 0 0 1px;
+}
+
+#container
+{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#welcome
+{
+	width:960px;
+	padding:0 75px 0 75px;
+}
+.part
+{
+	width:250px;
+	height:90px;
+	margin:10px;
+	float:left;
+	padding-top:180px;
+	text-align:center;
+	border:3px solid #aaa;
+	border-radius:20px;
+}
+
+.part:hover
+{
+	transition:border linear .2s,box-shadow linear .5s;
+	-moz-transition:border linear .2s,-moz-box-shadow linear .5s;
+	-webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+	outline:none;
+	border-color:rgba(255,153,0,.75);
+	box-shadow:0 0 8px rgba(255,153,0,.5);
+	-moz-box-shadow:0 0 8px rgba(255,153,0,.5);
+	-webkit-box-shadow:0 0 8px rgba(255,153,0,3);	
+}
+
+.part p 
+{
+	line-height:30px;
+}
+
+#me
+{
+	background:url(../img/me.png) no-repeat 50% 10%;
+}
+
+#blog
+{
+	background:url(../img/blog.png) no-repeat 50% 10%;
+}
+
+#email
+{
+	background:url(../img/email.png) no-repeat 50% 10%;
+}
+
+#lab
+{
+	background:url(../img/lab.png) no-repeat 50% 10%;
+}
+
+#resume
+{
+	background:url(../img/resume.png) no-repeat 50% 10%;
+}
+
+#search
+{
+	background:url(../img/search.png) no-repeat 50% 10%;
+}
