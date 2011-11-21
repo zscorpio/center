@@ -13,14 +13,14 @@
 <body>
 	<div id="container">
 		<div class="main">
-			<div class="left" id="wp">
+			<div class="left" id="aboutemail">
 				<a href="http://www.zscorpio.com/">
-					<div class="part" id="enter">
+					<div class="part" id="qq">
 						<p>Just Enter</p>
 						<p>View My Blog</p>
 					</div>	
 				</a>	
-				<div class="part" id="rss">
+				<div class="part" id="ali">
 					<p>Just Enter</p>
 					<p>View My Blog</p>
 				</div>

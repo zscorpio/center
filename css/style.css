@@ -100,6 +100,7 @@ body
 .left
 {
 	float:left;
+	width:730px;	
 }
 
 .right
@@ -198,9 +199,44 @@ body
 	background:url(../img/search.png) no-repeat 50% 10%;
 }
 
-#aboutme #desc 
+#enter
 {
-	width:719px;
+	background:url(../img/wp.png) no-repeat 50% 10%;
+}
+
+#rss
+{
+	background:url(../img/rss.png) no-repeat 50% 10%;
+}
+
+#qq
+{
+	background:url(../img/qq.png) no-repeat 50% 10%;	
+}
+
+#ali
+{
+	background:url(../img/ali.png) no-repeat 50% 10%;	
+}
+
+#google
+{
+	background:url(../img/g+.png) no-repeat 50% 10%;		
+}
+
+#facebook
+{
+	background:url(../img/facebook.png) no-repeat 50% 10%;		
+}
+
+#twitter
+{
+	background:url(../img/twitter.png) no-repeat 50% 10%;		
+}
+
+#flickr
+{
+	background:url(../img/flickr.png) no-repeat 50% 10%;		
 }
 
 #aboutme h2 

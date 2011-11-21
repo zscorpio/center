@@ -17,8 +17,16 @@
 			});
 			$("#blog").click(function(){ 
 				$("#welcome").fadeOut("slow"); 						
-				$("#aboutblog").load("http://www.zscorpio.com/");
-			});			
+				$("#aboutblog").load("blog.php");
+			});	
+			$("#email").click(function(){ 
+				$("#welcome").fadeOut("slow"); 						
+				$("#aboutemail").load("email.php");
+			});	
+			$("#search").click(function(){ 
+				$("#welcome").fadeOut("slow"); 						
+				$("#aboutaccount").load("account.php");
+			});	
 		}); 
 	</script> 	
 </head>
@@ -53,7 +61,11 @@
 		<div id="aboutme">
 		</div>
 		<div id="aboutblog">
-		</div>		
+		</div>	
+		<div id="aboutemail">
+		</div>	
+		<div id="aboutaccount">
+		</div>			
 	</div>
 </body>
 </html>
