@@ -41,7 +41,13 @@
 				$("#other").load("account.php");			
 				$body.animate({scrollTop: 643}, 1000);
 				$("#top").show();
-			});					
+			});
+			$("#lab").click(function(){ 
+				$("#welcome").addClass("opacity"); 			
+				$("#other").load("lab.php");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show();
+			});				
 		}); 
 	</script> 	
 </head>
@@ -64,10 +70,12 @@
 				<p>Public Scorpio's Lab</p>
 				<p>New Beta Productions</p>			
 			</div>
-			<div class="part" id="resume">
-				<p>My Resume For HR</p>
-				<p>Sorry It Is Only For HR</p>			
-			</div>
+			<a href="http://resume.zscorpio.com/">
+				<div class="part" id="resume">
+					<p>My Resume For HR</p>
+					<p>Sorry It Is Only For HR</p>			
+				</div>
+			</a>
 			<div class="part" id="search">
 				<p>Searching Me</p>
 				<p>Most My Accounts On Net</p>					
