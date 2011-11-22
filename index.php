@@ -11,22 +11,37 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>	
 	<script type="text/javascript">
 		$(document).ready(function(){ 	
+			$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+			$("#top").click(function(){ 
+				$(".left").fadeOut(1000); 
+				$body.animate({scrollTop: $('#welcome').offset().top}, 1000);
+				$("#welcome").removeClass("opacity"); 
+				$("#top").hide();					
+			});			
 			$("#me").click(function(){ 
-				$("#welcome").fadeOut("slow"); 						
-				$("#aboutme").load("me.php");
+				$("#welcome").addClass("opacity"); 			
+				$("#other").load("me.php");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show();				
 			});
 			$("#blog").click(function(){ 
-				$("#welcome").fadeOut("slow"); 						
-				$("#aboutblog").load("blog.php");
+				$("#welcome").addClass("opacity"); 			
+				$("#other").load("blog.php");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show();
 			});	
 			$("#email").click(function(){ 
-				$("#welcome").fadeOut("slow"); 						
-				$("#aboutemail").load("email.php");
+				$("#welcome").addClass("opacity"); 			
+				$("#other").load("email.php");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show();
 			});	
 			$("#search").click(function(){ 
-				$("#welcome").fadeOut("slow"); 						
-				$("#aboutaccount").load("account.php");
-			});	
+				$("#welcome").addClass("opacity"); 			
+				$("#other").load("account.php");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show();
+			});					
 		}); 
 	</script> 	
 </head>
@@ -55,17 +70,25 @@
 			</div>
 			<div class="part" id="search">
 				<p>Searching Me</p>
-				<p>All My Accounts On Net</p>					
-			</div>			
-		</div>
-		<div id="aboutme">
-		</div>
-		<div id="aboutblog">
+				<p>Most My Accounts On Net</p>					
+			</div>
+			<a href="http://me.zscorpio.com">			
+				<div class="part" id="card">
+					<p>Web Card</p>
+					<p>Another Card Include Me</p>					
+				</div>	
+			</a>			
+			<div class="part" id="site">
+				<p>Some Websites</p>
+				<p>Which I Always Go To</p>					
+			</div>				
 		</div>	
-		<div id="aboutemail">
-		</div>	
-		<div id="aboutaccount">
+		<div id="other">	
 		</div>			
+		<div class="right" id="top">
+			<p>Nothing Interst!?</p>				
+			<p>Then Go Back To Nav</p>				
+		</div>	
 	</div>
 </body>
 </html>

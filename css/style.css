@@ -100,12 +100,18 @@ body
 .left
 {
 	float:left;
-	width:730px;	
+	width:730px;
+	height:643px;
 }
 
 .right
 {
 	float:right;
+}
+
+.opacity
+{
+	opacity:0.5
 }
 
 #top
@@ -125,6 +131,7 @@ body
 	left:67.7%;
 	overflow:hidden;
 	text-align:center;
+	display:none;
 }
 
 #top p 
@@ -138,6 +145,12 @@ body
 	margin:0 auto;
 	position:relative;
 	z-index:0;
+}
+
+#welcome
+{
+	width:960px;
+	height:650px;
 }
 
 .part
@@ -199,6 +212,16 @@ body
 	background:url(../img/search.png) no-repeat 50% 10%;
 }
 
+#card
+{
+	background:url(../img/card.png) no-repeat 50% 10%;	
+}
+
+#site
+{
+	background:url(../img/site.png) no-repeat 50% 10%;	
+}
+
 #enter
 {
 	background:url(../img/wp.png) no-repeat 50% 10%;
@@ -217,6 +240,11 @@ body
 #ali
 {
 	background:url(../img/ali.png) no-repeat 50% 10%;	
+}
+
+#gtalk
+{
+	background:url(../img/gtalk.png) no-repeat 50% 10%;	
 }
 
 #google
@@ -239,7 +267,12 @@ body
 	background:url(../img/flickr.png) no-repeat 50% 10%;		
 }
 
-#aboutme h2 
+#other
+{
+	width:960px;
+}
+
+#other h2 
 {
 	font-size: 1.8em;
 	color:#0085E4;
@@ -247,7 +280,7 @@ body
 	padding-bottom:20px;
 }
 
-#aboutme h3 
+#other h3 
 {
 	font-size: 1.5em;
 	color:#9600ff;
@@ -259,7 +292,7 @@ body
 	padding:10px;	
 }
 
-#aboutme p
+#desc p
 {
 	font-size: 1.0em;
 	line-height:50px;
