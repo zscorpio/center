@@ -21,6 +21,11 @@ h1
 	font-size: 2em;
 }
 
+p
+{
+	font-size: 1.3em;
+}
+
 :focus
 {
 	outline:0;
@@ -112,6 +117,16 @@ body
 .opacity
 {
 	opacity:0.5
+}
+
+.blank{
+	position:absolute;width:102%;height:99%;z-index:98;
+	opacity:0.9;
+	-ms-filter: "alpha(opacity=50)";
+	background:#efefef url(../img/background.png) repeat top center;
+	top:0;
+	left:-1px;
+	display:none;
 }
 
 #top
@@ -207,7 +222,7 @@ body
 	background:url(../img/resume.png) no-repeat 50% 10%;
 }
 
-#search
+#account
 {
 	background:url(../img/search.png) no-repeat 50% 10%;
 }
@@ -302,9 +317,9 @@ body
 	padding:10px;	
 }
 
-#desc p
+#other p
 {
-	font-size: 1.0em;
+	font-size: 1.3em;
 	line-height:50px;
 	padding-left:20px;
 }

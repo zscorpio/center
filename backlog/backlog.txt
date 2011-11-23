@@ -1,0 +1,31 @@
+			$("#me").click(function(){ 
+				$("#welcomeblank").show();
+				$("#other").load("all.html #aboutme");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show(1000);					
+			});
+			$("#blog").click(function(){ 
+				$("#welcomeblank").show();				
+				$("#other").load("all.html #aboutblog");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show(1000);				
+				$.getScript("js/wp.js");	
+			});	
+			$("#email").click(function(){ 	
+				$("#welcomeblank").show();				
+				$("#other").load("all.html #aboutemail");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show(1000);
+			});	
+			$("#search").click(function(){ 
+				$("#welcomeblank").show();				
+				$("#other").load("all.html #aboutaccount");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show(1000);
+			});
+			$("#lab").click(function(){ 
+				$("#welcomeblank").show();				
+				$("#other").load("all.html #aboutlab");			
+				$body.animate({scrollTop: 643}, 1000);
+				$("#top").show(1000);
+			});	

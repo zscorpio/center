@@ -13,41 +13,21 @@
 		$(document).ready(function(){ 	
 			$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 			$("#top").click(function(){ 
-				$(".left").fadeOut(1000); 
-				$body.animate({scrollTop: $('#welcome').offset().top}, 1000);
-				$("#welcome").removeClass("opacity"); 
-				$("#top").hide();					
-			});			
-			$("#me").click(function(){ 
-				$("#welcome").addClass("opacity"); 			
-				$("#other").load("me.php");			
+				$("#welcomeblank").hide();
+				$(".left").fadeOut();			
+				$body.animate({scrollTop: -643}, 1000);
+				$("#top").hide(1000);					
+			});		
+			$("#welcome div").click(function(){
+				$("#welcomeblank").show();						
+				var click_id = $(this).attr("id");
+				var html="all.html"+" "+"#about"+click_id;
+				$("#other").load(html);	
 				$body.animate({scrollTop: 643}, 1000);
-				$("#top").show();				
+				$("#top").show(1000);
+				$.getScript("js/wp.js");
+				document.title = click_id +"-Scorpio's Center"				
 			});
-			$("#blog").click(function(){ 
-				$("#welcome").addClass("opacity"); 			
-				$("#other").load("blog.php");			
-				$body.animate({scrollTop: 643}, 1000);
-				$("#top").show();
-			});	
-			$("#email").click(function(){ 
-				$("#welcome").addClass("opacity"); 			
-				$("#other").load("email.php");			
-				$body.animate({scrollTop: 643}, 1000);
-				$("#top").show();
-			});	
-			$("#search").click(function(){ 
-				$("#welcome").addClass("opacity"); 			
-				$("#other").load("account.php");			
-				$body.animate({scrollTop: 643}, 1000);
-				$("#top").show();
-			});
-			$("#lab").click(function(){ 
-				$("#welcome").addClass("opacity"); 			
-				$("#other").load("lab.php");			
-				$body.animate({scrollTop: 643}, 1000);
-				$("#top").show();
-			});				
 		}); 
 	</script> 	
 </head>
@@ -70,33 +50,39 @@
 				<p>Public Scorpio's Lab</p>
 				<p>New Beta Productions</p>			
 			</div>
-			<a href="http://resume.zscorpio.com/">
-				<div class="part" id="resume">
-					<p>My Resume For HR</p>
-					<p>Sorry It Is Only For HR</p>			
-				</div>
-			</a>
-			<div class="part" id="search">
+			<div class="part" id="account">
 				<p>Searching Me</p>
 				<p>Most My Accounts On Net</p>					
+			</div>		
+			<div class="part" id="site">
+				<p>Some Websites</p>
+				<p>Which I Always Go To</p>					
 			</div>
 			<a href="http://me.zscorpio.com">			
 				<div class="part" id="card">
 					<p>Web Card</p>
 					<p>Another Card Include Me</p>					
 				</div>	
+			</a>	
+			<a href="http://resume.zscorpio.com/">
+				<div class="part" id="resume">
+					<p>My Resume For HR</p>
+					<p>Sorry It Is Only For HR</p>			
+				</div>
 			</a>			
-			<div class="part" id="site">
-				<p>Some Websites</p>
-				<p>Which I Always Go To</p>					
-			</div>				
 		</div>	
-		<div id="other">	
-		</div>			
+		<div id="welcomeblank" class="blank">
+		</div>
 		<div class="right" id="top">
 			<p>Nothing Interst!?</p>				
 			<p>Then Go Back To Nav</p>				
 		</div>	
+		<div id="other">	
+		</div>
+		<div id="sblank" class="blank">
+		</div>		
+		<div id="sother">	
+		</div>					
 	</div>
 </body>
 </html>
